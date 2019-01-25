@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/AkhilaV/Documents/DemoBackend/conf/routes
-// @DATE:Thu Jan 24 12:06:48 IST 2019
+// @SOURCE:/Users/yaswanthi/Documents/casettaBackEnd/conf/routes
+// @DATE:Fri Jan 25 11:21:13 IST 2019
 
 package controllers;
 
