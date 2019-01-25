@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/AkhilaV/Documents/DemoBackend/conf/logback.xml,/Users/AkhilaV/Documents/DemoBackend/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/AkhilaV/Documents/DemoBackend/conf/META-INF,/Users/AkhilaV/Documents/DemoBackend/target/scala-2.12/classes/META-INF)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/AkhilaV/Documents/DemoBackend/conf/META-INF/persistence.xml,/Users/AkhilaV/Documents/DemoBackend/target/scala-2.12/classes/META-INF/persistence.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/AkhilaV/Documents/DemoBackend/conf/application.conf,/Users/AkhilaV/Documents/DemoBackend/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/AkhilaV/Documents/DemoBackend/conf/routes,/Users/AkhilaV/Documents/DemoBackend/target/scala-2.12/classes/routes)[0m

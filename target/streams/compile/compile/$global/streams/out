@@ -1,0 +1,20 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/AkhilaV/Documents/DemoBackend/app/Module.java:4:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class BookDao[0m
+[0m[[0m[31merror[0m] [0m[0m  location: package dao[0m
+[0m[[0m[31merror[0m] [0m[0mimport dao.BookDao;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/AkhilaV/Documents/DemoBackend/app/Module.java:5:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class BookDaoImpl[0m
+[0m[[0m[31merror[0m] [0m[0m  location: package dao[0m
+[0m[[0m[31merror[0m] [0m[0mimport dao.BookDaoImpl;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/AkhilaV/Documents/DemoBackend/app/Module.java:6:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FakeBookDao[0m
+[0m[[0m[31merror[0m] [0m[0m  location: package dao[0m
+[0m[[0m[31merror[0m] [0m[0mimport dao.FakeBookDao;[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/AkhilaV/Documents/DemoBackend/app/Module.java:32:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class BookDaoImpl[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class Module[0m
+[0m[[0m[31merror[0m] [0m[0m        bind(BookDao.class).to(BookDaoImpl.class);[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/AkhilaV/Documents/DemoBackend/app/Module.java:32:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class BookDao[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class Module[0m
+[0m[[0m[31merror[0m] [0m[0m        bind(BookDao.class).to(BookDaoImpl.class);[0m
