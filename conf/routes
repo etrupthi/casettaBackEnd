@@ -2,10 +2,14 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET /foods                          controllers.FoodController.getFood()
 
-GET /hotels                         controllers.HotelController.getHotel()
 
+
+POST /hotels              controllers.HotelController.createHotel()
+GET  /hotels/:id          controllers.HotelController.getHotelById(id: Integer)
+PUT  /hotels/:id          controllers.HotelController.updateHotelById(id: Integer)
+DELETE /hotels/:id        controllers.HotelController.deleteHotelById(id: Integer)
+GET  /hotels              controllers.HotelController.getAllHotels()
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
