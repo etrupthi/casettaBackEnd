@@ -36,6 +36,7 @@ public class HotelDaoImpl implements HotelDao {
 
         final Hotel hotel = jpaApi.em().find(Hotel.class, id);
         return hotel != null ? Optional.of(hotel) : Optional.empty();
+
     }
 
     public Hotel update(Hotel hotel) {

@@ -7,6 +7,10 @@ import javax.persistence.*;
 @Entity
 public class User {
 
+    public enum Role {
+        ADMIN,
+        USER
+    }
 
     public enum State {
         PENDING,
@@ -14,18 +18,14 @@ public class User {
         LOCKED
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonProperty("id")
-    private Integer id;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @JsonProperty("id")
+//    private Integer id;
 
-    @Basic
+    @Id
     @JsonProperty("username")
     private String username;
-
-    @Basic
-    @JsonProperty("ownername")
-    private String ownername;
 
     @Basic
     @JsonProperty(value = "password", access = JsonProperty.Access.WRITE_ONLY)
@@ -34,6 +34,10 @@ public class User {
     @Basic
     @JsonProperty("email")
     private String email;
+
+    @Basic
+    @JsonProperty("role")
+    private Role role;
 
     @Basic
     @JsonProperty("state")
@@ -46,23 +50,26 @@ public class User {
     public User() {
     }
 
-    public User(Integer id, String username, String password, String email, State state, String accessToken) {
-        this.id = id;
+//    public User(Integer id, String username, String password, String email, Role role, State state, String accessToken)
+
+    public User(String username, String password, String email, Role role, State state, String accessToken)
+    {
+        //this.id = id;
         this.username = username;
         this.password = password;
         this.email = email;
-
+        this.role = role;
         this.state = state;
         this.accessToken = accessToken;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+//    public Integer getId() {
+//        return id;
+//    }
+//
+//    public void setId(Integer id) {
+//        this.id = id;
+//    }
 
     public String getUsername() {
         return username;
@@ -88,6 +95,14 @@ public class User {
         this.email = email;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     public State getState() {
         return state;
     }
@@ -102,13 +117,5 @@ public class User {
 
     public void setAccessToken(String accessToken) {
         this.accessToken = accessToken;
-    }
-
-    public String getOwnername() {
-        return ownername;
-    }
-
-    public void setOwnername(String ownername) {
-        this.ownername = ownername;
     }
 }
